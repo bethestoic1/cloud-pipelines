@@ -1,1 +1,7 @@
-https://cloudpipelines.com/sitemap.txt
+User-agent: *
+Allow: /
+
+# Help AI bots find your site summary
+LLMS: https://cloudpipelines.com/llms.txt
+
+Sitemap: https://cloudpipelines.com/sitemap.txt
