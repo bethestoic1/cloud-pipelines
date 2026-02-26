@@ -1,0 +1,9 @@
+# CloudPipelines
+> 2026 Infrastructure & FinOps Audit platform helping mid-market firms reduce cloud waste.
+
+## Core Services
+- [Infrastructure Audit](https://cloudpipelines.com/index.html): Independent assessment of resource over-provisioning and security gaps.
+- [Cloud Optimization](https://cloudpipelines.com/success.html): Managed migration paths to Google Cloud C3D infrastructure.
+
+## Targeted Audience
+CTOs, FinOps leads, and DevOps engineers looking to reduce annual cloud spend by up to 30%.
