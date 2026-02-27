@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="theme-color" content="#0f172a">
+    <title>Enterprise Infrastructure Audit | Cloud-Pipelines</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        * { box-sizing: border-box; }
+        html { -webkit-text-size-adjust: 100%; }
+        body { font-family: 'Outfit', -apple-system, BlinkMacSystemFont, sans-serif; line-height: 1.5; color: #e2e8f0; background: #020617; margin: 0; min-height: 100vh; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 24px 20px 48px; }
+        header { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px; padding-bottom: 24px; margin-bottom: 32px; border-bottom: 1px solid #1e293b; }
+        .logo { font-size: 1.25rem; font-weight: 700; letter-spacing: 0.05em; color: #f1f5f9; }
+        .logo span { color: #9945FF; }
+        nav { display: flex; gap: 20px; }
+        nav a { color: #94a3b8; text-decoration: none; font-weight: 600; font-size: 0.95rem; padding: 6px 0; border-bottom: 2px solid transparent; transition: color 0.2s, border-color 0.2s; }
+        nav a:hover { color: #e2e8f0; }
+        nav a.active { color: #9945FF; border-bottom-color: #9945FF; }
+        main { padding: 0; }
+        .gradient-text { background: linear-gradient(135deg, #e2e8f0 0%, #94a3b8 50%, #9945FF 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; font-size: clamp(1.75rem, 5vw, 2.5rem); font-weight: 700; margin: 0 0 16px; letter-spacing: -0.02em; }
+        .enterprise-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr)); gap: 28px; margin-top: 48px; }
+        .server-card { background: #0f172a; border: 1px solid #1e293b; border-radius: 16px; padding: 28px; position: relative; transition: border-color 0.2s, box-shadow 0.2s; min-width: 0; box-shadow: 0 4px 24px rgba(0,0,0,0.25); }
+        .server-card:hover { border-color: #9945FF; box-shadow: 0 8px 32px rgba(153, 69, 255, 0.12); }
+        .partner-badge { position: absolute; top: 20px; right: 20px; background: rgba(153, 69, 255, 0.2); color: #9945FF; padding: 6px 12px; border-radius: 20px; font-size: 0.7rem; font-weight: bold; max-width: 55%; text-align: center; }
+        .spec-row { display: flex; justify-content: space-between; gap: 12px; margin-bottom: 12px; font-size: 0.9rem; border-bottom: 1px solid #1e293b; padding-bottom: 8px; flex-wrap: wrap; }
+        .spec-label { color: #64748b; flex-shrink: 0; }
+        .spec-value { color: #f1f5f9; font-weight: 600; text-align: right; word-break: break-word; }
+        .recurring-tag { background: #14f195; color: #000; font-size: 0.7rem; font-weight: bold; padding: 8px 10px; border-radius: 6px; margin-top: 12px; display: inline-block; }
+        .deploy-btn { display: block; width: 100%; text-align: center; background: #9945FF; color: white; padding: 16px 20px; min-height: 48px; border-radius: 10px; text-decoration: none; font-weight: bold; margin-top: 24px; transition: background 0.2s; box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+        .deploy-btn:hover { background: #7a32d3; }
+        .audit-disclaimer { margin-top: 56px; padding: 28px; background: #0f172a; border: 1px solid #1e293b; border-radius: 12px; font-size: 0.9rem; color: #cbd5e1; line-height: 1.6; }
+        .audit-disclaimer strong { color: #e2e8f0; }
+        .audit-disclaimer code { background: #1e293b; padding: 2px 6px; border-radius: 4px; font-size: 0.85em; color: #94a3b8; }
+        .audit-disclaimer a { text-decoration: underline; text-underline-offset: 2px; }
+        .audit-disclaimer a:hover { opacity: 0.9; }
+        .audit-disclaimer p:last-child { margin-top: 12px; font-size: 0.8rem; color: #94a3b8; }
+        @media (max-width: 480px) {
+            .container { padding: 16px 16px 40px; }
+            .enterprise-grid { gap: 20px; margin-top: 32px; }
+            .server-card { padding: 20px; }
+            .partner-badge { position: static; display: inline-block; margin-bottom: 12px; max-width: none; }
+            .server-card h3 { margin-top: 0; }
+            .audit-disclaimer { padding: 20px; margin-top: 40px; font-size: 0.85rem; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">CLOUD<span>PIPELINES</span></div>
+            <nav>
+                <a href="index.html">Blueprint</a>
+                <a href="infrastructure.html" class="active">Bare Metal Audit</a>
+            </nav>
+        </header>
+
+        <main>
+            <section style="text-align: center; margin-bottom: 48px;">
+                <h1 class="gradient-text">2026 Bare Metal Audit</h1>
+                <p style="color: #94a3b8; max-width: 640px; margin: 0 auto; font-size: 1.05rem;">We benchmark global IaaS providers for Solana p99 latency and Firedancer-v1 compatibility. Provision your 1M TPS stack below.</p>
+            </section>
+
+            <div class="enterprise-grid">
+                <div class="server-card">
+                    <div class="partner-badge">TOP RATED: FIREDANCER</div>
+                    <h3 style="color: #fff; margin-top: 0;">Cherry Servers</h3>
+                    <p style="color: #64748b; font-size: 0.85rem; margin-bottom: 20px;">Optimized for high-frequency EPYC Zen 5 clusters in Amsterdam & Frankfurt hubs.</p>
+                    
+                    <div class="spec-row"><span class="spec-label">CPU</span><span class="spec-value">AMD EPYC™ 9355 (32C/64T)</span></div>
+                    <div class="spec-row"><span class="spec-label">RAM</span><span class="spec-value">384GB ECC REG DDR5</span></div>
+                    <div class="spec-row"><span class="spec-label">Network</span><span class="spec-value">10Gbps (100TB Free Egress)</span></div>
+                    <div class="spec-row"><span class="spec-label">Storage</span><span class="spec-value">2x1TB + 2x4TB NVMe Gen5</span></div>
+                    
+                    <div class="recurring-tag">10% OFF — see cherryservers.com/promotions</div>
+                    <a href="https://www.cherryservers.com/solana-servers" class="deploy-btn" rel="noopener noreferrer">Deploy Firedancer Node →</a>
+                </div>
+
+                <div class="server-card">
+                    <div class="partner-badge">GLOBAL LOW LATENCY</div>
+                    <h3 style="color: #fff; margin-top: 0;">Latitude.sh</h3>
+                    <p style="color: #64748b; font-size: 0.85rem; margin-bottom: 20px;">Direct fiber connectivity to Jito and MEV engines in 16+ global locations.</p>
+                    
+                    <div class="spec-row"><span class="spec-label">CPU</span><span class="spec-value">AMD 9275F (24C @ 4.1 GHz)</span></div>
+                    <div class="spec-row"><span class="spec-label">RAM</span><span class="spec-value">768GB DDR5</span></div>
+                    <div class="spec-row"><span class="spec-label">Network</span><span class="spec-value">100Gbps (Global Backbone)</span></div>
+                    <div class="spec-row"><span class="spec-label">Storage</span><span class="spec-value">2x480GB + 2x3.8TB NVMe</span></div>
+
+                    <div class="recurring-tag">JITO-OPTIMIZED ENDPOINTS</div>
+                    <a href="https://www.latitude.sh" class="deploy-btn" style="background: #14f195; color: #000;" rel="noopener noreferrer">Deploy Validator Node →</a>
+                </div>
+
+                <div class="server-card" style="border-color: #9945FF;">
+                    <div class="partner-badge" style="background: #9945FF; color: #fff;">MONSTER RPC</div>
+                    <h3 style="color: #fff; margin-top: 0;">Institutional RPC</h3>
+                    <p style="color: #64748b; font-size: 0.85rem; margin-bottom: 20px;">Dedicated Threadripper PRO setups for high-volume dApp indexing.</p>
+                    
+                    <div class="spec-row"><span class="spec-label">CPU</span><span class="spec-value">Threadripper™ 7975WX (32C)</span></div>
+                    <div class="spec-row"><span class="spec-label">RAM</span><span class="spec-value">1152GB ECC DDR5</span></div>
+                    <div class="spec-row"><span class="spec-label">Network</span><span class="spec-value">Dedicated 10Gbps Uplink</span></div>
+                    <div class="spec-row"><span class="spec-label">Target</span><span class="spec-value">Mainnet RPC / Geyser</span></div>
+
+                    <a href="https://www.cherryservers.com/bare-metal-dedicated-servers/europe" class="deploy-btn" rel="noopener noreferrer">Provision RPC Stack →</a>
+                </div>
+            </div>
+
+            <div class="audit-disclaimer">
+                <p><strong>Technical Audit Note:</strong> Our benchmarks are performed using <code>solana-bench-tps</code> against current Firedancer releases. Cherry Servers is our recommended partner for European validator clusters (Amsterdam, Frankfurt, Stockholm). Latitude.sh is recommended for North American and Asian edge expansion, with a dedicated Jito MEV-validator program.</p>
+                <p><strong>Partner signup:</strong> <a href="https://www.cherryservers.com/affiliate" rel="noopener noreferrer" style="color: #9945FF;">Cherry Servers affiliate</a> (10% recurring commission) · <a href="https://www.latitude.sh/dashboard/signup" rel="noopener noreferrer" style="color: #14f195;">Latitude.sh referral</a> (credits for referred customers).</p>
+                <p>Disclosure: Cloud-Pipelines.com operates as an infrastructure auditor. We may earn commissions or referral rewards from partners, which supports our 2026 performance lab.</p>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
