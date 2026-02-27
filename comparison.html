@@ -3,25 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Compare Cloudways, Kinsta, and DigitalOcean for 2026 infrastructure: managed hosting, Web3 nodes, and CI/CD.">
+    <meta name="theme-color" content="#f9fafb">
     <title>2026 Infrastructure Shootout | CloudPipelines Audit</title>
     <style>
-        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; background: #f9fafb; padding: 40px 20px; color: #1f2937; }
-        .container { max-width: 1000px; margin: 0 auto; background: white; padding: 40px; border-radius: 20px; box-shadow: 0 20px 40px rgba(0,0,0,0.05); }
-        h1 { text-align: center; color: #111827; margin-bottom: 10px; font-size: 2rem; }
-        p.subtitle { text-align: center; color: #6b7280; margin-bottom: 40px; }
+        * { box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; background: #f9fafb; padding: 20px 16px; color: #1f2937; margin: 0; -webkit-text-size-adjust: 100%; }
+        .container { max-width: 1000px; margin: 0 auto; background: white; padding: clamp(20px, 4vw, 40px); border-radius: 20px; box-shadow: 0 20px 40px rgba(0,0,0,0.05); }
+        h1 { text-align: center; color: #111827; margin-bottom: 10px; font-size: clamp(1.35rem, 4vw, 2rem); }
+        p.subtitle { text-align: center; color: #6b7280; margin-bottom: 24px; font-size: clamp(0.9rem, 2vw, 1rem); padding: 0 8px; }
         
-        table { width: 100%; border-collapse: collapse; margin-top: 20px; }
-        th { background: #f8fafc; padding: 18px 15px; text-align: left; border-bottom: 2px solid #e2e8f0; color: #475569; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.05em; }
-        td { padding: 20px 15px; border-bottom: 1px solid #f1f5f9; font-size: 0.95rem; }
+        .table-wrap { width: 100%; overflow-x: auto; -webkit-overflow-scrolling: touch; margin-top: 20px; border-radius: 12px; border: 1px solid #e2e8f0; }
+        table { width: 100%; min-width: 480px; border-collapse: collapse; margin: 0; }
+        th { background: #f8fafc; padding: 14px 12px; text-align: left; border-bottom: 2px solid #e2e8f0; color: #475569; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.05em; white-space: nowrap; }
+        td { padding: 16px 12px; border-bottom: 1px solid #f1f5f9; font-size: 0.9rem; }
         
-        /* Conversion Elements */
-        .btn-deploy { background: #2e36d6; color: white !important; padding: 12px 18px; border-radius: 8px; text-decoration: none; font-weight: bold; display: inline-block; transition: 0.2s; text-align: center; }
+        .btn-deploy { background: #2e36d6; color: white !important; padding: 14px 20px; border-radius: 8px; text-decoration: none; font-weight: bold; display: inline-block; transition: 0.2s; text-align: center; min-height: 44px; line-height: 1.2; }
         .btn-deploy:hover { background: #1e25a5; transform: translateY(-2px); box-shadow: 0 4px 12px rgba(46, 54, 214, 0.2); }
-        .btn-secondary { color: #4b5563; text-decoration: none; font-weight: 600; border: 1px solid #d1d5db; padding: 10px 16px; border-radius: 8px; display: inline-block; }
+        .btn-secondary { color: #4b5563; text-decoration: none; font-weight: 600; border: 1px solid #d1d5db; padding: 12px 18px; border-radius: 8px; display: inline-block; min-height: 44px; line-height: 1.2; }
         .btn-secondary:hover { background: #f3f4f6; }
         
         .badge-pick { background: #ecfdf5; color: #059669; padding: 4px 10px; border-radius: 20px; font-size: 0.75rem; font-weight: bold; margin-left: 8px; border: 1px solid #a7f3d0; }
         .highlight-text { color: #2e36d6; font-weight: 700; }
+        .table-wrap .action-cell { white-space: nowrap; }
+        @media (max-width: 640px) {
+            body { padding: 12px; }
+            .container { padding: 20px; border-radius: 16px; }
+            th, td { padding: 12px 10px; font-size: 0.85rem; }
+            .btn-deploy, .btn-secondary { display: block; text-align: center; width: 100%; }
+        }
     </style>
 </head>
 <body>
@@ -30,6 +40,7 @@
     <h1>2026 Infrastructure Shootout</h1>
     <p class="subtitle">Comparing managed performance for Web3, Institutional RPC, and Enterprise CI/CD.</p>
 
+    <div class="table-wrap">
     <table>
         <thead>
             <tr>
@@ -67,25 +78,27 @@
 
             <tr>
                 <td><strong>Action</strong></td>
-                <td>
+                <td class="action-cell">
                     <a href="https://www.cloudways.com/en/?id=2086075" 
                        target="_blank" 
                        rel="nofollow noopener" 
                        class="btn-deploy">Deploy Node →</a>
                 </td>
-                <td>
+                <td class="action-cell">
                     <a href="https://kinsta.com?kaid=PVUCUJHTRBMT" 
                        target="_blank" 
                        rel="nofollow noopener" 
                        class="btn-secondary">Select Kinsta →</a>
                 </td>
-                <td>
+                <td class="action-cell">
                     <span style="color: #9ca3af; font-size: 0.85rem; font-style: italic;">Institutional Audit Pending</span>
                 </td>
             </tr>            
             
         </tbody>
     </table>
+    </div>
+    <p style="text-align: center; font-size: 0.85rem; color: #6b7280; margin-top: 28px;"><em>Disclosure: We may receive commissions from providers listed above. "TOP PICK" is our editorial recommendation.</em></p>
 </div>
 
 </body>

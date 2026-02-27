@@ -5,16 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="last-modified" content="2026-02-26">
     <title>CloudPipelines | 2026 Infrastructure & FinOps Audit</title>
+    <meta name="description" content="2026 Infrastructure & FinOps audit. Reduce cloud waste and over-provisioning with an independent assessment for mid-market firms.">
+    <meta name="theme-color" content="#0f172a">
     <style>
         /* High-Tech Stoic Theme */
-        body { font-family: 'Inter', -apple-system, sans-serif; line-height: 1.6; color: #e0e6ed; max-width: 900px; margin: 0 auto; padding: 20px; background: #0f172a; }
-        header { padding: 50px 0; text-align: center; border-bottom: 1px solid #334155; }
-        h1 { color: #38bdf8; font-size: 2.5em; letter-spacing: -1px; }
-        .audit-box { background: #1e293b; padding: 40px; border-radius: 12px; border: 1px solid #38bdf8; margin-top: 30px; }
-        .metric-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin: 20px 0; }
-        .metric { background: #334155; padding: 15px; border-radius: 8px; text-align: center; border-left: 4px solid #38bdf8; }
-        footer { text-align: center; margin-top: 60px; font-size: 0.85em; color: #64748b; border-top: 1px solid #334155; padding-top: 20px; }
+        * { box-sizing: border-box; }
+        body { font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif; line-height: 1.6; color: #e0e6ed; max-width: 900px; margin: 0 auto; padding: 16px; background: #0f172a; -webkit-text-size-adjust: 100%; }
+        header { padding: 32px 0; text-align: center; border-bottom: 1px solid #334155; }
+        h1 { color: #38bdf8; font-size: clamp(1.5rem, 5vw, 2.5rem); letter-spacing: -0.5px; margin: 0 0 0.25em; }
+        header p { margin: 0; font-size: clamp(0.9rem, 2.5vw, 1rem); }
+        .audit-box { background: #1e293b; padding: clamp(20px, 5vw, 40px); border-radius: 12px; border: 1px solid #38bdf8; margin-top: 24px; }
+        .audit-box h2 { margin-top: 0; font-size: clamp(1.1rem, 3vw, 1.35rem); }
+        .metric-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin: 20px 0; }
+        .metric { background: #334155; padding: 16px; border-radius: 8px; text-align: center; border-left: 4px solid #38bdf8; min-height: 60px; display: flex; align-items: center; justify-content: center; flex-direction: column; }
+        .tally-wrap { width: 100%; overflow: hidden; border-radius: 8px; }
+        .tally-wrap iframe { min-height: 600px; max-height: 90vh; }
+        footer { text-align: center; margin-top: 48px; font-size: 0.85em; color: #64748b; border-top: 1px solid #334155; padding-top: 20px; padding-bottom: 24px; }
+        footer p { margin: 0.5em 0; }
         a { color: #38bdf8; text-decoration: none; }
+        @media (max-width: 600px) {
+            body { padding: 12px; }
+            header { padding: 24px 0; }
+            .audit-box { padding: 20px; margin-top: 20px; }
+            .metric-grid { grid-template-columns: 1fr; gap: 12px; }
+            .tally-wrap iframe { min-height: 520px; }
+        }
     </style>
     
     <script type="application/ld+json">
@@ -27,7 +42,7 @@
           "name": "How much cloud spend is typically wasted?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Based on 2026 audit data, mid-market firms typically waste 32% of their annual cloud spend on over-provisioned resources and unoptimized scaling."
+            "text": "Industry and FinOps reports often cite that mid-market firms waste around 30% of annual cloud spend on over-provisioned resources and unoptimized scaling."
           }
         },
         {
@@ -53,14 +68,16 @@
 
     <div class="audit-box">
         <h2>Why is a 2026 Infrastructure Health Check necessary?</h2>
-        <p>In 2026, a <strong>2026 infrastructure health check</strong> is necessary because most mid-market firms are over-provisioned by 30%, leaking capital through inefficient resource scaling and hidden security bottlenecks.</p>
+        <p>In 2026, an <strong>infrastructure health check</strong> helps because many mid-market firms are over-provisioned—industry reports often cite <strong>around 30%</strong> of cloud spend wasted on unused or oversized resources—and security gaps are commonly found in infrastructure audits.</p>
         
         <div class="metric-grid">
-            <div class="metric"><strong>Avg. Waste</strong><br>32% Annual Spend</div>
-            <div class="metric"><strong>Security Gaps</strong><br>Found in 8/10 Audits</div>
+            <div class="metric"><strong>Typical Waste</strong><br>~30% Annual Spend</div>
+            <div class="metric"><strong>Security Gaps</strong><br>Common in Audits</div>
         </div>
 
+<div class="tally-wrap">
 <iframe data-tally-src="https://tally.so/embed/448bpr?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1" loading="lazy" width="100%" height="740" frameborder="0" marginheight="0" marginwidth="0" title="Whale Hunter"></iframe>
+</div>
 <script>var d=document,w="https://tally.so/widgets/embed.js",v=function(){"undefined"!=typeof Tally?Tally.loadEmbeds():d.querySelectorAll("iframe[data-tally-src]:not([src])").forEach((function(e){e.src=e.dataset.tallySrc}))};if("undefined"!=typeof Tally)v();else if(d.querySelector('script[src="'+w+'"]')==null){var s=d.createElement("script");s.src=w,s.onload=v,s.onerror=v,d.body.appendChild(s);}</script>
         
     </div>
