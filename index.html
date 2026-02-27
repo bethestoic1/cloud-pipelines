@@ -19,8 +19,9 @@
         .audit-box h2 { margin-top: 0; font-size: clamp(1.1rem, 3vw, 1.35rem); }
         .metric-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin: 20px 0; }
         .metric { background: #334155; padding: 16px; border-radius: 8px; text-align: center; border-left: 4px solid #38bdf8; min-height: 60px; display: flex; align-items: center; justify-content: center; flex-direction: column; }
-        .tally-wrap { width: 100%; overflow: hidden; border-radius: 8px; }
-        .tally-wrap iframe { min-height: 600px; max-height: 90vh; }
+        .tally-wrap { width: 100%; overflow: visible; border-radius: 8px; }
+        /* No max-height: form can grow to full height so Submit is reachable by page scroll on mobile/Brave */
+        .tally-wrap iframe { min-height: 600px; display: block; }
         footer { text-align: center; margin-top: 48px; font-size: 0.85em; color: #64748b; border-top: 1px solid #334155; padding-top: 20px; padding-bottom: 24px; }
         footer p { margin: 0.5em 0; }
         a { color: #38bdf8; text-decoration: none; }
