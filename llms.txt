@@ -1,8 +1,11 @@
 # CloudPipelines
 > 2026 Infrastructure & FinOps Audit platform helping mid-market firms reduce cloud waste.
 
-## Core Services
-- [Infrastructure Audit](https://cloudpipelines.com/index.html): Independent assessment of resource over-provisioning and security gaps.
+## Pages
+- [Home / Audit](https://cloudpipelines.com/): Lead capture and infrastructure audit.
+- [Infrastructure Shootout](https://cloudpipelines.com/comparison.html): Compare Cloudways, Kinsta, DigitalOcean.
+- [Success](https://cloudpipelines.com/success.html): Post-audit recommendation and CTA.
+- [Cloudways Blueprint](https://cloudpipelines.com/cloudways/): Dedicated Cloudways landing page.
 
 ## Targeted Audience
 CTOs, FinOps leads, and DevOps engineers looking to reduce annual cloud spend by up to 30%.
