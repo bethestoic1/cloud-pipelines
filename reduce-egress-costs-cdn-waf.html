@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="How to reduce egress costs with CDN and WAF (2026). Cut cloud data transfer and bandwidth bills for AWS, GCP, Azure.">
+    <meta name="theme-color" content="#0f172a">
+    <link rel="canonical" href="https://cloudpipelines.com/reduce-egress-costs-cdn-waf.html">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://cloudpipelines.com/reduce-egress-costs-cdn-waf.html">
+    <meta property="og:title" content="How to Reduce Egress Costs (CDN &amp; WAF) | CloudPipelines">
+    <meta name="twitter:card" content="summary">
+    <meta name="google-site-verification" content="">
+    <title>How to Reduce Egress Costs (CDN &amp; WAF) | CloudPipelines</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <style>
+        :root { --bg: #0f172a; --surface: #1e293b; --border: #334155; --text: #e0e6ed; --muted: #64748b; --accent: #38bdf8; --radius: 12px; }
+        * { box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, sans-serif; line-height: 1.7; color: var(--text); max-width: 720px; margin: 0 auto; padding: clamp(20px, 5vw, 40px); background: var(--bg); -webkit-text-size-adjust: 100%; }
+        header { padding-bottom: 24px; margin-bottom: 24px; border-bottom: 1px solid var(--border); }
+        h1 { color: var(--accent); font-size: clamp(1.35rem, 4vw, 1.75rem); margin: 0 0 0.35em; }
+        h2 { font-size: 1.15rem; margin-top: 28px; margin-bottom: 10px; color: #94a3b8; }
+        p { margin: 0 0 14px; }
+        ul { margin: 0 0 14px; padding-left: 1.4em; }
+        li { margin-bottom: 6px; }
+        .cta { background: var(--surface); padding: 20px; border-radius: var(--radius); margin: 24px 0; }
+        footer { margin-top: 48px; padding-top: 20px; border-top: 1px solid var(--border); font-size: 0.85em; color: var(--muted); }
+        footer a { color: var(--accent); }
+        a { color: var(--accent); }
+        a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>How to Reduce Egress Costs (CDN &amp; WAF)</h1>
+        <p style="color: var(--muted); margin: 0;">Cut cloud data transfer and bandwidth bills for AWS, GCP, Azure.</p>
+    </header>
+
+    <p>Egress (data transfer out) is often one of the largest and most controllable parts of a cloud bill. Using a <strong>CDN</strong> and, where it makes sense, a <strong>WAF</strong> can cut egress from origin and reduce bandwidth cost. This guide covers practical patterns for AWS, GCP, and Azure. For a full cost audit see our <a href="finops-audit-2026.html">FinOps audit (2026)</a> and <a href="cloud-cost-optimization-checklist.html">cloud cost optimization checklist</a>.</p>
+
+    <h2>Why egress hurts</h2>
+    <p>Cloud providers charge for data leaving their network (and often more for cross-region or internet egress). High traffic to users, APIs, or downloads can make egress the second-biggest line item after compute. Reducing bytes served from origin directly reduces that cost.</p>
+
+    <h2>CDN: cache at the edge</h2>
+    <p>Put static assets (and cacheable API responses) behind a CDN so users are served from edge locations. Origin egress drops because only cache misses and dynamic content hit your cloud. Use:</p>
+    <ul>
+        <li><strong>AWS</strong>: CloudFront in front of S3/ALB/EC2</li>
+        <li><strong>GCP</strong>: Cloud CDN with Load Balancing</li>
+        <li><strong>Azure</strong>: Azure CDN or Front Door</li>
+    </ul>
+    <p>Set cache TTLs and invalidation rules so fresh content is still correct. Many managed hosts (e.g. <a href="cloudways/index.html">Cloudways</a>) offer Cloudflare or similar as an add-on.</p>
+
+    <h2>WAF and edge logic</h2>
+    <p>A WAF (Web Application Firewall) at the edge can block bad traffic before it reaches origin, reducing unnecessary egress and load. Use WAF rules to throttle or block bots, known bad IPs, and attack patterns. Less junk traffic means less origin egress and lower compute load.</p>
+
+    <h2>Other levers</h2>
+    <ul>
+        <li>Keep traffic in-region where possible (same-region egress is often cheaper or free).</li>
+        <li>Compress responses (gzip/Brotli) to reduce bytes transferred.</li>
+        <li>Review and trim unnecessary cross-region or vendor-to-vendor transfer.</li>
+    </ul>
+
+    <div class="cta">
+        <p style="margin: 0;">Want a full cost audit and prioritized fix list? <a href="index.html">Run our free FinOps audit</a>.</p>
+    </div>
+
+    <footer>
+        <p><a href="index.html">Home</a> · <a href="finops-audit-2026.html">FinOps Audit</a> · <a href="aws-rightsizing-what-moves-the-bill.html">AWS</a> · <a href="gcp-cost-optimization-top-leaks.html">GCP</a> · <a href="best-managed-cloud-2026.html">Guides</a></p>
+        <p><em>We may receive recurring commissions from recommended providers.</em></p>
+    </footer>
+
+</body>
+</html>

@@ -5,3 +5,10 @@ https://cloudpipelines.com/success.html
 https://cloudpipelines.com/infrastructure.html
 https://cloudpipelines.com/best-managed-cloud-2026.html
 https://cloudpipelines.com/cloudways/
+https://cloudpipelines.com/finops-audit-2026.html
+https://cloudpipelines.com/cloud-cost-optimization-checklist.html
+https://cloudpipelines.com/aws-rightsizing-what-moves-the-bill.html
+https://cloudpipelines.com/gcp-cost-optimization-top-leaks.html
+https://cloudpipelines.com/cloudways-vs-kinsta-2026-devops-wp.html
+https://cloudpipelines.com/best-managed-hosting-agencies.html
+https://cloudpipelines.com/reduce-egress-costs-cdn-waf.html
