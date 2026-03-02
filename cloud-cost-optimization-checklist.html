@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Cloud cost optimization checklist for mid-market (2026): rightsizing, storage, egress, reservations, and quick wins to cut cloud waste.">
+    <meta name="theme-color" content="#0f172a">
+    <link rel="canonical" href="https://cloudpipelines.com/cloud-cost-optimization-checklist.html">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://cloudpipelines.com/cloud-cost-optimization-checklist.html">
+    <meta property="og:title" content="Cloud Cost Optimization Checklist (Mid-Market 2026) | CloudPipelines">
+    <meta name="twitter:card" content="summary">
+    <meta name="google-site-verification" content="">
+    <title>Cloud Cost Optimization Checklist (Mid-Market 2026) | CloudPipelines</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <style>
+        :root { --bg: #0f172a; --surface: #1e293b; --border: #334155; --text: #e0e6ed; --muted: #64748b; --accent: #38bdf8; --radius: 12px; }
+        * { box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, sans-serif; line-height: 1.7; color: var(--text); max-width: 720px; margin: 0 auto; padding: clamp(20px, 5vw, 40px); background: var(--bg); -webkit-text-size-adjust: 100%; }
+        header { padding-bottom: 24px; margin-bottom: 24px; border-bottom: 1px solid var(--border); }
+        h1 { color: var(--accent); font-size: clamp(1.35rem, 4vw, 1.75rem); margin: 0 0 0.35em; }
+        h2 { font-size: 1.15rem; margin-top: 28px; margin-bottom: 10px; color: #94a3b8; }
+        p { margin: 0 0 14px; }
+        ul { margin: 0 0 14px; padding-left: 1.4em; }
+        li { margin-bottom: 6px; }
+        .cta { background: var(--surface); padding: 20px; border-radius: var(--radius); margin: 24px 0; }
+        .cta a { color: var(--accent); font-weight: 600; }
+        footer { margin-top: 48px; padding-top: 20px; border-top: 1px solid var(--border); font-size: 0.85em; color: var(--muted); }
+        footer a { color: var(--accent); }
+        a { color: var(--accent); }
+        a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Cloud Cost Optimization Checklist (Mid-Market 2026)</h1>
+        <p style="color: var(--muted); margin: 0;">Rightsizing, storage, egress, reservations, and quick wins to cut cloud waste.</p>
+    </header>
+
+    <p>Use this checklist to run a first-pass <strong>cloud cost optimization</strong> for mid-market AWS, GCP, or Azure spend. For a structured audit and prioritized fix list, see our <a href="finops-audit-2026.html">FinOps audit guide (2026)</a>.</p>
+
+    <h2>Rightsizing</h2>
+    <ul>
+        <li>Identify over-provisioned instances (low CPU/memory utilization over 14+ days).</li>
+        <li>Downsize or switch to burstable/spot where workload allows.</li>
+        <li>Review RDS/database instance and storage sizing; check for unused replicas.</li>
+    </ul>
+
+    <h2>Storage</h2>
+    <ul>
+        <li>Move cold data to cheaper tiers (S3 IA/Glacier, GCS Nearline/Coldline, Azure Cool/Archive).</li>
+        <li>Delete unattached volumes, old snapshots, and abandoned buckets.</li>
+        <li>Turn on lifecycle policies for logs and temp data.</li>
+    </ul>
+
+    <h2>Egress &amp; data transfer</h2>
+    <ul>
+        <li>Review egress by region and service; see <a href="reduce-egress-costs-cdn-waf.html">how to reduce egress costs (CDN/WAF)</a>.</li>
+        <li>Use CDN for static assets; consider WAF/edge where it cuts origin load.</li>
+    </ul>
+
+    <h2>Reservations &amp; commitments</h2>
+    <ul>
+        <li>Check Reserved Instance / Savings Plans / committed use coverage vs. baseline usage.</li>
+        <li>Align commitment term with actual runway (1-year vs 3-year).</li>
+    </ul>
+
+    <h2>Quick wins</h2>
+    <ul>
+        <li>Turn off dev/test outside business hours (scheduler or auto-shutdown).</li>
+        <li>Tag resources for cost allocation and showback.</li>
+        <li>Set billing alerts and anomaly detection.</li>
+    </ul>
+
+    <div class="cta">
+        <p style="margin: 0;">Want a tailored recommendation? <a href="index.html">Run our free FinOps audit</a> and get a managed migration path that can cut waste by up to 30%.</p>
+    </div>
+
+    <footer>
+        <p><a href="index.html">Home</a> · <a href="finops-audit-2026.html">FinOps Audit</a> · <a href="comparison.html">Compare</a> · <a href="best-managed-cloud-2026.html">Guides</a></p>
+        <p><em>We may receive recurring commissions from recommended providers.</em></p>
+    </footer>
+
+</body>
+</html>

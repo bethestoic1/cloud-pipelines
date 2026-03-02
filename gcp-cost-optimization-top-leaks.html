@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="GCP cost optimization: top 10 leaks (2026). VM and disk rightsizing, committed use, egress, BigQuery, and unattached resources.">
+    <meta name="theme-color" content="#0f172a">
+    <link rel="canonical" href="https://cloudpipelines.com/gcp-cost-optimization-top-leaks.html">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://cloudpipelines.com/gcp-cost-optimization-top-leaks.html">
+    <meta property="og:title" content="GCP Cost Optimization: Top 10 Leaks (2026) | CloudPipelines">
+    <meta name="twitter:card" content="summary">
+    <meta name="google-site-verification" content="">
+    <title>GCP Cost Optimization: Top 10 Leaks (2026) | CloudPipelines</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <style>
+        :root { --bg: #0f172a; --surface: #1e293b; --border: #334155; --text: #e0e6ed; --muted: #64748b; --accent: #38bdf8; --radius: 12px; }
+        * { box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, sans-serif; line-height: 1.7; color: var(--text); max-width: 720px; margin: 0 auto; padding: clamp(20px, 5vw, 40px); background: var(--bg); -webkit-text-size-adjust: 100%; }
+        header { padding-bottom: 24px; margin-bottom: 24px; border-bottom: 1px solid var(--border); }
+        h1 { color: var(--accent); font-size: clamp(1.35rem, 4vw, 1.75rem); margin: 0 0 0.35em; }
+        h2 { font-size: 1.15rem; margin-top: 28px; margin-bottom: 10px; color: #94a3b8; }
+        p { margin: 0 0 14px; }
+        ul { margin: 0 0 14px; padding-left: 1.4em; }
+        li { margin-bottom: 6px; }
+        .cta { background: var(--surface); padding: 20px; border-radius: var(--radius); margin: 24px 0; }
+        footer { margin-top: 48px; padding-top: 20px; border-top: 1px solid var(--border); font-size: 0.85em; color: var(--muted); }
+        footer a { color: var(--accent); }
+        a { color: var(--accent); }
+        a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>GCP Cost Optimization: Top 10 Leaks (2026)</h1>
+        <p style="color: var(--muted); margin: 0;">VM and disk rightsizing, committed use, egress, BigQuery, and unattached resources.</p>
+    </header>
+
+    <p>Google Cloud bills often hide waste in a few predictable places. Here are the <strong>top 10 GCP cost optimization</strong> levers we see in mid-market audits. For a full framework see our <a href="finops-audit-2026.html">FinOps audit guide</a> and <a href="cloud-cost-optimization-checklist.html">cloud cost optimization checklist</a>.</p>
+
+    <h2>1. Over-provisioned VMs</h2>
+    <p>Right-size Compute Engine instances using utilization metrics. Downsize or switch to E2 or preemptible where workload allows.</p>
+
+    <h2>2. Persistent disks</h2>
+    <p>Unattached or oversized disks. Delete unattached disks; move cold data to Standard or balance performance/cost with pd-balanced/pd-ssd.</p>
+
+    <h2>3. Committed use discounts (CUDs)</h2>
+    <p>Underused or misaligned commitments. Align CUDs to steady-state usage and term length (1-year vs 3-year).</p>
+
+    <h2>4. Sustained use discounts</h2>
+    <p>Automatic but only apply to on-demand. Ensure you're not double-paying with unnecessary committed use where sustained use already helps.</p>
+
+    <h2>5. Egress and network</h2>
+    <p>Cross-region and internet egress. Use Cloud CDN, keep traffic in-region where possible, and see <a href="reduce-egress-costs-cdn-waf.html">reduce egress costs (CDN/WAF)</a>.</p>
+
+    <h2>6. BigQuery</h2>
+    <p>Slot usage, on-demand query patterns, and storage. Use BI Engine or slot reservations for predictable workloads; archive old partitions to cold storage.</p>
+
+    <h2>7. Pub/Sub and message volume</h2>
+    <p>Message volume and retention. Tune retention and subscription counts to actual needs.</p>
+
+    <h2>8. Cloud Storage</h2>
+    <p>Bucket class and lifecycle. Move cold data to Nearline/Coldline/Archive and set lifecycle rules.</p>
+
+    <h2>9. Idle or forgotten resources</h2>
+    <p>Old snapshots, unused IPs, abandoned VMs in dev projects. Regular cleanup and project-level tagging.</p>
+
+    <h2>10. Kubernetes (GKE)</h2>
+    <p>Node pool sizing, autoscaling, and cluster footprint. Right-size node pools and use node auto-repair to avoid over-provisioning.</p>
+
+    <div class="cta">
+        <p style="margin: 0;">Want a prioritized list for your environment? <a href="index.html">Run our free FinOps audit</a> for a tailored recommendation.</p>
+    </div>
+
+    <footer>
+        <p><a href="index.html">Home</a> · <a href="finops-audit-2026.html">FinOps Audit</a> · <a href="aws-rightsizing-what-moves-the-bill.html">AWS rightsizing</a> · <a href="best-managed-cloud-2026.html">Guides</a></p>
+        <p><em>We may receive recurring commissions from recommended providers.</em></p>
+    </footer>
+
+</body>
+</html>

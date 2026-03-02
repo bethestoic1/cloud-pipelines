@@ -2,12 +2,15 @@
 > 2026 Infrastructure & FinOps Audit platform helping mid-market firms reduce cloud waste.
 
 ## Pages
-- [Home / Audit](https://cloudpipelines.com/): Lead capture and infrastructure audit.
-- [Infrastructure Shootout](https://cloudpipelines.com/comparison.html): Compare Cloudways, Kinsta, DigitalOcean.
+- [Home / Audit](https://cloudpipelines.com/): FinOps audit lead capture and cloud cost optimization.
+- [Cloudways vs Kinsta vs DigitalOcean](https://cloudpipelines.com/comparison.html): Managed hosting comparison (2026).
 - [Success](https://cloudpipelines.com/success.html): Post-audit recommendation and CTA.
-- [Bare Metal Audit](https://cloudpipelines.com/infrastructure.html): Solana/Firedancer, validators, Cherry Servers, Latitude.sh.
-- [Best Managed Cloud 2026](https://cloudpipelines.com/best-managed-cloud-2026.html): Guides and comparison links.
+- [Solana / Bare Metal](https://cloudpipelines.com/infrastructure.html): Solana/Firedancer, validators, Cherry Servers, Latitude.sh.
+- [Best Managed Cloud 2026](https://cloudpipelines.com/best-managed-cloud-2026.html): Guides hub and comparison links.
 - [Cloudways Blueprint](https://cloudpipelines.com/cloudways/): Dedicated Cloudways landing page.
+- [FinOps Audit (2026)](https://cloudpipelines.com/finops-audit-2026.html): Pillar guide—who, what we check, deliverables.
+- [Cloud Cost Optimization Checklist](https://cloudpipelines.com/cloud-cost-optimization-checklist.html): Mid-market checklist.
+- [AWS Rightsizing](https://cloudpipelines.com/aws-rightsizing-what-moves-the-bill.html), [GCP Top Leaks](https://cloudpipelines.com/gcp-cost-optimization-top-leaks.html), [Cloudways vs Kinsta](https://cloudpipelines.com/cloudways-vs-kinsta-2026-devops-wp.html), [Best Hosting for Agencies](https://cloudpipelines.com/best-managed-hosting-agencies.html), [Reduce Egress Costs](https://cloudpipelines.com/reduce-egress-costs-cdn-waf.html): Support articles.
 
 ## Targeted Audience
 CTOs, FinOps leads, and DevOps engineers looking to reduce annual cloud spend by up to 30%.

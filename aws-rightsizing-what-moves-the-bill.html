@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="AWS rightsizing: what actually moves the bill. EC2, RDS, storage, egress, and Reserved Instances for mid-market cost optimization.">
+    <meta name="theme-color" content="#0f172a">
+    <link rel="canonical" href="https://cloudpipelines.com/aws-rightsizing-what-moves-the-bill.html">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://cloudpipelines.com/aws-rightsizing-what-moves-the-bill.html">
+    <meta property="og:title" content="AWS Rightsizing: What Actually Moves the Bill | CloudPipelines">
+    <meta name="twitter:card" content="summary">
+    <meta name="google-site-verification" content="">
+    <title>AWS Rightsizing: What Actually Moves the Bill | CloudPipelines</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <style>
+        :root { --bg: #0f172a; --surface: #1e293b; --border: #334155; --text: #e0e6ed; --muted: #64748b; --accent: #38bdf8; --radius: 12px; }
+        * { box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, sans-serif; line-height: 1.7; color: var(--text); max-width: 720px; margin: 0 auto; padding: clamp(20px, 5vw, 40px); background: var(--bg); -webkit-text-size-adjust: 100%; }
+        header { padding-bottom: 24px; margin-bottom: 24px; border-bottom: 1px solid var(--border); }
+        h1 { color: var(--accent); font-size: clamp(1.35rem, 4vw, 1.75rem); margin: 0 0 0.35em; }
+        h2 { font-size: 1.15rem; margin-top: 28px; margin-bottom: 10px; color: #94a3b8; }
+        p { margin: 0 0 14px; }
+        ul { margin: 0 0 14px; padding-left: 1.4em; }
+        li { margin-bottom: 6px; }
+        .cta { background: var(--surface); padding: 20px; border-radius: var(--radius); margin: 24px 0; }
+        footer { margin-top: 48px; padding-top: 20px; border-top: 1px solid var(--border); font-size: 0.85em; color: var(--muted); }
+        footer a { color: var(--accent); }
+        a { color: var(--accent); }
+        a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>AWS Rightsizing: What Actually Moves the Bill</h1>
+        <p style="color: var(--muted); margin: 0;">EC2, RDS, storage, egress, and Reserved Instances for mid-market cost optimization.</p>
+    </header>
+
+    <p>For most mid-market AWS bills, a few levers drive the majority of waste. This post focuses on <strong>what actually moves the bill</strong> when you do AWS rightsizing: compute, databases, storage, egress, and reservations. For a full audit framework, see our <a href="finops-audit-2026.html">FinOps audit (2026)</a> and <a href="cloud-cost-optimization-checklist.html">cloud cost optimization checklist</a>.</p>
+
+    <h2>EC2 and compute</h2>
+    <p>Over-provisioned EC2 instances are the single biggest leak for many teams. Use CloudWatch (or Cost Explorer utilization) to find instances with consistently low CPU and memory over 14+ days. Downsize to a smaller instance family or move variable workloads to Spot. Lambda: check concurrency and duration; over-provisioned concurrency can add up.</p>
+
+    <h2>RDS and databases</h2>
+    <p>Right-size instance and storage. Look for underused replicas, oversized instance types, and storage that could move to gp3 or lower tiers. Multi-AZ and read replicas are necessary for many workloads but should be justified by usage.</p>
+
+    <h2>Storage (EBS, S3)</h2>
+    <p>EBS: delete unattached volumes and old snapshots; align volume types and size to actual IOPS needs. S3: move cold data to IA/Glacier; enable lifecycle policies; clean up incomplete multipart uploads and abandoned buckets.</p>
+
+    <h2>Egress</h2>
+    <p>Data transfer out is often the second-largest line item. Optimize with CloudFront for static assets, regional colocation where possible, and review cross-region and internet egress. We go deeper in <a href="reduce-egress-costs-cdn-waf.html">reduce egress costs (CDN/WAF)</a>.</p>
+
+    <h2>Reserved Instances and Savings Plans</h2>
+    <p>Align RI/SP coverage to steady-state usage. Avoid over-buying for variable or short-lived workloads. Use Savings Plans for flexibility if your mix of EC2, Lambda, Fargate changes.</p>
+
+    <div class="cta">
+        <p style="margin: 0;">Get a tailored audit and managed-infrastructure recommendations: <a href="index.html">run our free FinOps audit</a>.</p>
+    </div>
+
+    <footer>
+        <p><a href="index.html">Home</a> · <a href="finops-audit-2026.html">FinOps Audit</a> · <a href="gcp-cost-optimization-top-leaks.html">GCP leaks</a> · <a href="best-managed-cloud-2026.html">Guides</a></p>
+        <p><em>We may receive recurring commissions from recommended providers.</em></p>
+    </footer>
+
+</body>
+</html>
