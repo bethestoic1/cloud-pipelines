@@ -5,6 +5,8 @@
 - [Home / Audit](https://cloudpipelines.com/): Lead capture and infrastructure audit.
 - [Infrastructure Shootout](https://cloudpipelines.com/comparison.html): Compare Cloudways, Kinsta, DigitalOcean.
 - [Success](https://cloudpipelines.com/success.html): Post-audit recommendation and CTA.
+- [Bare Metal Audit](https://cloudpipelines.com/infrastructure.html): Solana/Firedancer, validators, Cherry Servers, Latitude.sh.
+- [Best Managed Cloud 2026](https://cloudpipelines.com/best-managed-cloud-2026.html): Guides and comparison links.
 - [Cloudways Blueprint](https://cloudpipelines.com/cloudways/): Dedicated Cloudways landing page.
 
 ## Targeted Audience

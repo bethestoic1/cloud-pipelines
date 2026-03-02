@@ -32,6 +32,11 @@
             th, td { padding: 12px 10px; font-size: 0.85rem; }
             .btn-deploy, .btn-secondary { display: block; text-align: center; width: 100%; }
         }
+        @media (prefers-reduced-motion: reduce) {
+            .btn-deploy, .btn-secondary { transition: none; }
+            .btn-deploy:hover { transform: none; }
+        }
+        .btn-deploy:focus-visible, .btn-secondary:focus-visible { outline: 2px solid #2e36d6; outline-offset: 2px; }
     </style>
 </head>
 <body>
@@ -98,7 +103,12 @@
         </tbody>
     </table>
     </div>
-    <p style="text-align: center; font-size: 0.85rem; color: #6b7280; margin-top: 28px;"><em>Disclosure: We may receive commissions from providers listed above. "TOP PICK" is our editorial recommendation.</em></p>
+    <p style="text-align: center; font-size: 0.85rem; color: #6b7280; margin-top: 28px;"><em>Disclosure: We may receive recurring commissions from providers listed above. "TOP PICK" is our editorial recommendation.</em></p>
+
+    <footer style="margin-top: 40px; padding-top: 24px; border-top: 1px solid #e2e8f0; text-align: center; font-size: 0.9rem; color: #6b7280;">
+        <p style="margin: 0 0 8px;"><a href="index.html" style="color: #2e36d6;">Home</a> · <a href="infrastructure.html" style="color: #2e36d6;">Bare Metal Audit</a> · <a href="cloudways/index.html" style="color: #2e36d6;">Cloudways Blueprint</a> · <a href="best-managed-cloud-2026.html" style="color: #2e36d6;">Guides</a></p>
+        <p style="margin: 0;">&copy; 2026 CloudPipelines</p>
+    </footer>
 </div>
 
 </body>
