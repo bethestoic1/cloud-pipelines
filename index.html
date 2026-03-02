@@ -9,22 +9,33 @@
     <meta name="theme-color" content="#0f172a">
     <link rel="icon" type="image/svg+xml" href="favicon.svg">
     <style>
-        /* High-Tech Stoic Theme */
+        /* Design tokens + High-Tech Stoic Theme */
+        :root {
+            --bg: #0f172a;
+            --surface: #1e293b;
+            --border: #334155;
+            --text: #e0e6ed;
+            --muted: #64748b;
+            --accent: #38bdf8;
+            --radius: 12px;
+            --space: clamp(16px, 4vw, 24px);
+        }
         * { box-sizing: border-box; }
-        body { font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif; line-height: 1.6; color: #e0e6ed; max-width: 900px; margin: 0 auto; padding: 16px; background: #0f172a; -webkit-text-size-adjust: 100%; }
-        header { padding: 32px 0; text-align: center; border-bottom: 1px solid #334155; }
-        h1 { color: #38bdf8; font-size: clamp(1.5rem, 5vw, 2.5rem); letter-spacing: -0.5px; margin: 0 0 0.25em; }
+        body { font-family: -apple-system, BlinkMacSystemFont, sans-serif; line-height: 1.6; color: var(--text); max-width: 900px; margin: 0 auto; padding: var(--space); background: var(--bg); -webkit-text-size-adjust: 100%; }
+        header { padding: 32px 0; text-align: center; border-bottom: 1px solid var(--border); }
+        h1 { color: var(--accent); font-size: clamp(1.5rem, 5vw, 2.5rem); letter-spacing: -0.5px; margin: 0 0 0.25em; }
         header p { margin: 0; font-size: clamp(0.9rem, 2.5vw, 1rem); }
-        .audit-box { background: #1e293b; padding: clamp(20px, 5vw, 40px); border-radius: 12px; border: 1px solid #38bdf8; margin-top: 24px; }
+        .audit-box { background: var(--surface); padding: clamp(20px, 5vw, 40px); border-radius: var(--radius); border: 1px solid var(--accent); margin-top: 24px; }
         .audit-box h2 { margin-top: 0; font-size: clamp(1.1rem, 3vw, 1.35rem); }
         .metric-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin: 20px 0; }
-        .metric { background: #334155; padding: 16px; border-radius: 8px; text-align: center; border-left: 4px solid #38bdf8; min-height: 60px; display: flex; align-items: center; justify-content: center; flex-direction: column; }
+        .metric { background: var(--border); padding: 16px; border-radius: 8px; text-align: center; border-left: 4px solid var(--accent); min-height: 60px; display: flex; align-items: center; justify-content: center; flex-direction: column; }
         .tally-wrap { width: 100%; overflow: visible; border-radius: 8px; }
-        /* No max-height: form can grow to full height so Submit is reachable by page scroll on mobile/Brave */
         .tally-wrap iframe { min-height: 600px; display: block; }
-        footer { text-align: center; margin-top: 48px; font-size: 0.85em; color: #64748b; border-top: 1px solid #334155; padding-top: 20px; padding-bottom: 24px; }
+        footer { text-align: center; margin-top: 48px; font-size: 0.85em; color: var(--muted); border-top: 1px solid var(--border); padding-top: 20px; padding-bottom: 24px; }
         footer p { margin: 0.5em 0; }
-        a { color: #38bdf8; text-decoration: none; }
+        footer a { color: var(--accent); }
+        a { color: var(--accent); text-decoration: none; }
+        a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
         @media (max-width: 600px) {
             body { padding: 12px; }
             header { padding: 24px 0; }
@@ -32,6 +43,7 @@
             .metric-grid { grid-template-columns: 1fr; gap: 12px; }
             .tally-wrap iframe { min-height: 520px; }
         }
+        @media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
     </style>
     
     <script type="application/ld+json">
@@ -85,8 +97,9 @@
     </div>
 
     <footer>
+        <p><a href="comparison.html">Compare</a> · <a href="infrastructure.html">Bare Metal Audit</a> · <a href="best-managed-cloud-2026.html">Guides</a></p>
         <p>&copy; 2026 CloudPipelines | Managed Asset</p>
-        <p><em>Disclosure: This is an independent resource. We may receive commissions for infrastructure solutions recommended via our audit tool.</em></p>
+        <p><em>Disclosure: This is an independent resource. We may receive recurring commissions for infrastructure solutions recommended via our audit tool.</em></p>
     </footer>
 
 </body>

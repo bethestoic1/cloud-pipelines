@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <meta name="theme-color" content="#0f172a">
     <title>Enterprise Infrastructure Audit | Cloud-Pipelines</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&display=swap" rel="stylesheet">
     <style>
         * { box-sizing: border-box; }
@@ -45,6 +46,10 @@
             .server-card h3 { margin-top: 0; }
             .audit-disclaimer { padding: 20px; margin-top: 40px; font-size: 0.85rem; }
         }
+        @media (prefers-reduced-motion: reduce) {
+            nav a, .server-card, .deploy-btn { transition: none; }
+            .server-card:hover { box-shadow: 0 4px 24px rgba(0,0,0,0.25); }
+        }
     </style>
 </head>
 <body>
@@ -53,7 +58,9 @@
             <div class="logo">CLOUD<span>PIPELINES</span></div>
             <nav>
                 <a href="index.html">Blueprint</a>
+                <a href="comparison.html">Compare</a>
                 <a href="infrastructure.html" class="active">Bare Metal Audit</a>
+                <a href="best-managed-cloud-2026.html">Guides</a>
             </nav>
         </header>
 
@@ -111,6 +118,11 @@
                 <p><strong>Partner signup:</strong> <a href="https://www.cherryservers.com/affiliate" rel="noopener noreferrer" style="color: #9945FF;">Cherry Servers affiliate</a> (10% recurring commission) · <a href="https://www.latitude.sh/dashboard/signup" rel="noopener noreferrer" style="color: #14f195;">Latitude.sh referral</a> (credits for referred customers).</p>
                 <p>Disclosure: Cloud-Pipelines.com operates as an infrastructure auditor. We may earn commissions or referral rewards from partners, which supports our 2026 performance lab.</p>
             </div>
+
+            <footer style="margin-top: 48px; padding-top: 24px; border-top: 1px solid #1e293b; text-align: center; font-size: 0.9rem; color: #94a3b8;">
+                <p style="margin: 0 0 8px;"><a href="index.html" style="color: #94a3b8; text-decoration: none;">Home</a> · <a href="comparison.html" style="color: #94a3b8; text-decoration: none;">Compare</a> · <a href="cloudways/index.html" style="color: #94a3b8; text-decoration: none;">Cloudways Blueprint</a> · <a href="best-managed-cloud-2026.html" style="color: #94a3b8; text-decoration: none;">Guides</a></p>
+                <p style="margin: 0; font-size: 0.85em;">&copy; 2026 CloudPipelines</p>
+            </footer>
         </main>
     </div>
 </body>
