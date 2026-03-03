@@ -11,7 +11,7 @@ Stay **FTC- and DigitalOcean-compliant** (disclosure at top of page) while keepi
 - **One short line** at the top of the main content (directly under the header or at top of container).
 - **No box** — no background panel or heavy border. A subtle bottom border or no border keeps it readable but low-visual-weight.
 - **Muted color, small type** (e.g. 0.8rem) so it reads as “standard transparency” rather than a warning.
-- **Copy:** “Advertising disclosure: We may receive commissions from [recommended providers / providers below / providers linked on this page].” Optional: “This supports our independent [audit/comparisons].”
+- **Copy:** “Advertising disclosure: We earn commissions when you shop through the links below.” (Footer: “We earn commissions when you shop through the links on this page.”)
 - **Keep footer disclosure** on key pages (e.g. index) for redundancy; primary compliance is satisfied by the **top** placement.
 
 ---
