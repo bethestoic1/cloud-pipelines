@@ -69,7 +69,7 @@ Thank you for the clarification.
 
 **Advertising disclosure – top of page:**
 
-I’ve updated **CloudPipelines** so that every page that contains affiliate or DigitalOcean recommendations now has an **advertising disclosure at the top of the page** (directly under the header or at the top of the main content), not only in the footer. Wording used: “Advertising disclosure: This is an independent resource. We may receive recurring commissions for infrastructure solutions recommended via our audit tool and links on this site.” (Or the equivalent short form on comparison/success/cloudways pages.)
+I’ve updated **CloudPipelines** so that every page that contains affiliate or DigitalOcean recommendations now has an **advertising disclosure at the top of the page** (directly under the header or at the top of the main content), not only in the footer. Wording used: “Advertising disclosure: We earn commissions when you shop through the links below.”
 
 For **Learn Solana, Code Pipelines, CryoVault Solutions, and Tech Walkthroughs**, I will apply the same pattern: on any page that includes a DigitalOcean link or recommendation, the disclosure will appear at the **top** of the page. I’ll ensure this is in place before driving traffic to those DO links.
 
