@@ -36,8 +36,30 @@
         .card a:hover { text-decoration: underline; }
         .card a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
         .disclosure-top { font-size: 0.8rem; color: var(--muted); margin: 0 0 12px; padding: 6px 0; line-height: 1.4; border-bottom: 1px solid var(--border); }
+        .more-guides a, footer a {
+            color: #22d3ee;
+            text-decoration: none;
+            text-shadow: 0 0 12px rgba(34, 211, 238, 0.5);
+            transition: color 0.2s, font-weight 0.2s, background 0.2s;
+        }
+        .more-guides a:hover, footer a:hover {
+            color: #67e8f9;
+            font-weight: 700;
+            background: rgba(34, 211, 238, 0.15);
+            padding: 2px 4px;
+            margin: -2px -4px;
+            border-radius: 4px;
+        }
+        .more-guides a:visited, footer a:visited {
+            color: #a5f3fc;
+        }
+        .more-guides a:visited:hover, footer a:visited:hover {
+            color: #67e8f9;
+            font-weight: 700;
+            background: rgba(34, 211, 238, 0.15);
+        }
+        .more-guides a:focus-visible, footer a:focus-visible { outline: 2px solid #22d3ee; outline-offset: 2px; }
         footer { margin-top: 48px; padding-top: 20px; border-top: 1px solid var(--border); font-size: 0.85em; color: var(--muted); }
-        footer a { color: var(--accent); }
         @media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
     </style>
 </head>
@@ -63,6 +85,12 @@
     </div>
 
     <div class="card">
+        <h2>Best managed WordPress hosting (2026)</h2>
+        <p>Cloudways, Kinsta, SiteGround, and WP Engine compared. Who each host is for and clear recommendations.</p>
+        <p><a href="best-managed-wordpress-hosting-2026.html">Best Managed WordPress 2026 →</a></p>
+    </div>
+
+    <div class="card">
         <h2>Solana / bare metal &amp; validators</h2>
         <p>Benchmarks for Solana Firedancer, Jito-optimized nodes, and institutional RPC. Cherry Servers and Latitude.sh options with specs and recurring partner terms.</p>
         <p><a href="infrastructure.html">Solana Validator Hosting →</a></p>
@@ -75,9 +103,11 @@
     </div>
 
     <h2 style="margin-top: 32px; margin-bottom: 12px;">More guides</h2>
-    <p style="margin-bottom: 8px;"><a href="cloud-cost-optimization-checklist.html">Cloud cost optimization checklist</a> · <a href="aws-rightsizing-what-moves-the-bill.html">AWS rightsizing</a> · <a href="gcp-cost-optimization-top-leaks.html">GCP top leaks</a></p>
+    <div class="more-guides">
+    <p style="margin-bottom: 8px;"><a href="best-managed-wordpress-hosting-2026.html">Best managed WordPress 2026</a> · <a href="cloud-cost-optimization-checklist.html">Cloud cost optimization checklist</a> · <a href="aws-rightsizing-what-moves-the-bill.html">AWS rightsizing</a> · <a href="gcp-cost-optimization-top-leaks.html">GCP top leaks</a></p>
     <p style="margin-bottom: 8px;"><a href="cloudways-vs-kinsta-2026-devops-wp.html">Cloudways vs Kinsta (DevOps vs WP)</a> · <a href="best-managed-hosting-agencies.html">Best hosting for agencies</a> · <a href="reduce-egress-costs-cdn-waf.html">Reduce egress costs</a></p>
-    <p style="margin-bottom: 8px;"><a href="cloudways-vs-wpengine-2026.html">Cloudways vs WP Engine 2026</a> · <a href="best-vps-hosting-developers-2026.html">Best VPS for developers</a> · <a href="kinsta-review-2026.html">Kinsta review 2026</a></p>
+    <p style="margin-bottom: 8px;"><a href="cloudways-vs-wpengine-2026.html">Cloudways vs WP Engine 2026</a> · <a href="cloudways-vs-siteground-2026.html">Cloudways vs SiteGround 2026</a> · <a href="best-vps-hosting-developers-2026.html">Best VPS for developers</a> · <a href="kinsta-review-2026.html">Kinsta review 2026</a></p>
+    </div>
 
     <footer>
         <p><a href="index.html">Home</a> · <a href="finops-audit-2026.html">FinOps Audit</a> · <a href="comparison.html">Compare</a> · <a href="infrastructure.html">Solana</a> · <a href="cloudways/index.html">Cloudways</a></p>
