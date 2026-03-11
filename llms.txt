@@ -3,14 +3,16 @@
 
 ## Pages
 - [Home / Audit](https://cloudpipelines.com/): FinOps audit lead capture and cloud cost optimization.
-- [Cloudways vs Kinsta vs DigitalOcean](https://cloudpipelines.com/comparison.html): Managed hosting comparison (2026).
+- [Cloudways vs Kinsta vs DigitalOcean vs SiteGround](https://cloudpipelines.com/comparison.html): Managed hosting comparison (2026).
 - [Success](https://cloudpipelines.com/success.html): Post-audit recommendation and CTA.
 - [Solana / Bare Metal](https://cloudpipelines.com/infrastructure.html): Solana/Firedancer, validators, Cherry Servers, Latitude.sh.
 - [Best Managed Cloud 2026](https://cloudpipelines.com/best-managed-cloud-2026.html): Guides hub and comparison links.
+- [Best Managed WordPress Hosting 2026](https://cloudpipelines.com/best-managed-wordpress-hosting-2026.html): Cloudways, Kinsta, SiteGround, WP Engine compared.
 - [Cloudways Blueprint](https://cloudpipelines.com/cloudways/): Dedicated Cloudways landing page.
 - [FinOps Audit (2026)](https://cloudpipelines.com/finops-audit-2026.html): Pillar guide—who, what we check, deliverables.
 - [Cloud Cost Optimization Checklist](https://cloudpipelines.com/cloud-cost-optimization-checklist.html): Mid-market checklist.
-- [AWS Rightsizing](https://cloudpipelines.com/aws-rightsizing-what-moves-the-bill.html), [GCP Top Leaks](https://cloudpipelines.com/gcp-cost-optimization-top-leaks.html), [Cloudways vs Kinsta](https://cloudpipelines.com/cloudways-vs-kinsta-2026-devops-wp.html), [Best Hosting for Agencies](https://cloudpipelines.com/best-managed-hosting-agencies.html), [Reduce Egress Costs](https://cloudpipelines.com/reduce-egress-costs-cdn-waf.html): Support articles.
+- [AWS Rightsizing](https://cloudpipelines.com/aws-rightsizing-what-moves-the-bill.html), [GCP Top Leaks](https://cloudpipelines.com/gcp-cost-optimization-top-leaks.html), [Reduce Egress Costs](https://cloudpipelines.com/reduce-egress-costs-cdn-waf.html): FinOps support articles.
+- [Cloudways vs Kinsta (DevOps vs WP)](https://cloudpipelines.com/cloudways-vs-kinsta-2026-devops-wp.html), [Cloudways vs SiteGround 2026](https://cloudpipelines.com/cloudways-vs-siteground-2026.html), [Cloudways vs WP Engine 2026](https://cloudpipelines.com/cloudways-vs-wpengine-2026.html), [Kinsta Review 2026](https://cloudpipelines.com/kinsta-review-2026.html), [Best VPS for Developers 2026](https://cloudpipelines.com/best-vps-hosting-developers-2026.html), [Best Hosting for Agencies](https://cloudpipelines.com/best-managed-hosting-agencies.html): Hosting comparisons and reviews.
 
 ## Targeted Audience
 CTOs, FinOps leads, and DevOps engineers looking to reduce annual cloud spend by up to 30%.

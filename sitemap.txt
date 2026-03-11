@@ -1,5 +1,4 @@
 https://cloudpipelines.com/
-https://cloudpipelines.com/index.html
 https://cloudpipelines.com/comparison.html
 https://cloudpipelines.com/success.html
 https://cloudpipelines.com/infrastructure.html
@@ -16,3 +15,4 @@ https://cloudpipelines.com/cloudways-vs-wpengine-2026.html
 https://cloudpipelines.com/best-vps-hosting-developers-2026.html
 https://cloudpipelines.com/kinsta-review-2026.html
 https://cloudpipelines.com/cloudways-vs-siteground-2026.html
+https://cloudpipelines.com/best-managed-wordpress-hosting-2026.html
