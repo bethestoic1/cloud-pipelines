@@ -187,51 +187,51 @@
     <table>
         <thead>
             <tr>
-                <th>Instance</th>
+                <th>Plan</th>
                 <th>RAM</th>
                 <th>vCPU</th>
                 <th>Storage</th>
                 <th>Price/mo</th>
-                <th>Notes</th>
+                <th>Best For</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td><strong>t3.small</strong></td>
+                <td><strong>Micro</strong></td>
+                <td>1 GB</td>
+                <td>2</td>
+                <td>20 GB</td>
+                <td><strong>$20.56</strong></td>
+                <td>Dev/test, low-traffic blogs</td>
+            </tr>
+            <tr>
+                <td><strong>Small</strong></td>
                 <td>2 GB</td>
                 <td>2</td>
                 <td>20 GB</td>
-                <td><strong>~$38</strong></td>
-                <td>Burstable — good for low-traffic sites</td>
+                <td><strong>$38.56</strong></td>
+                <td>Small sites, 3–5 WP installs</td>
             </tr>
             <tr class="highlight-row">
-                <td><strong>t3.medium</strong></td>
+                <td><strong>Medium</strong></td>
                 <td>4 GB</td>
                 <td>2</td>
                 <td>20 GB</td>
-                <td><strong>~$57</strong></td>
-                <td>Most popular AWS tier on Cloudways</td>
+                <td><strong>$91.84</strong></td>
+                <td>Most popular AWS tier — multi-site agencies</td>
             </tr>
             <tr>
-                <td><strong>t3.large</strong></td>
+                <td><strong>Large</strong></td>
                 <td>8 GB</td>
                 <td>2</td>
                 <td>20 GB</td>
-                <td><strong>~$88</strong></td>
-                <td>Multi-site, steady traffic workloads</td>
-            </tr>
-            <tr>
-                <td><strong>c5.large</strong></td>
-                <td>4 GB</td>
-                <td>2</td>
-                <td>20 GB</td>
-                <td><strong>~$120</strong></td>
-                <td>Compute-optimized — high PHP concurrency</td>
+                <td><strong>$183.22</strong></td>
+                <td>High-traffic sites, WooCommerce at scale</td>
             </tr>
         </tbody>
     </table>
     </div>
-    <p style="font-size: 0.83rem; color: #6b7280;">AWS prices include Cloudways management markup. Storage is SSD add-on; base includes EBS volumes. Prices vary slightly by region.</p>
+    <p style="font-size: 0.83rem; color: #6b7280;">AWS plans are significantly more expensive than DigitalOcean at equivalent RAM. Choose AWS only if you have compliance requirements or are deeply integrated with AWS services. For WordPress hosting, DigitalOcean offers far better value.</p>
 
     <h2>Cloudways GCP pricing</h2>
     <p>Google Cloud Platform on Cloudways gives you the same data center infrastructure as Kinsta but with full Cloudways management and multi-app flexibility. Best for teams who want GCP infrastructure without Kinsta's per-site pricing.</p>
@@ -240,42 +240,52 @@
     <table>
         <thead>
             <tr>
-                <th>Instance</th>
+                <th>Plan</th>
                 <th>RAM</th>
                 <th>vCPU</th>
                 <th>Storage</th>
                 <th>Price/mo</th>
-                <th>Notes</th>
+                <th>Best For</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td><strong>n1-standard-1</strong></td>
+                <td><strong>Small</strong></td>
+                <td>1.7 GB</td>
+                <td>Shared</td>
+                <td>20 GB</td>
+                <td><strong>$37.33</strong></td>
+                <td>Entry GCP — small WordPress sites</td>
+            </tr>
+            <tr>
+                <td><strong>Medium</strong></td>
                 <td>3.75 GB</td>
                 <td>1</td>
                 <td>20 GB</td>
-                <td><strong>~$37</strong></td>
-                <td>Entry GCP — good for 3–8 WP sites</td>
+                <td><strong>$84</strong></td>
+                <td>Growing sites, 5–10 WP installs</td>
             </tr>
             <tr class="highlight-row">
-                <td><strong>n1-standard-2</strong></td>
+                <td><strong>Large</strong></td>
                 <td>7.5 GB</td>
                 <td>2</td>
                 <td>20 GB</td>
-                <td><strong>~$74</strong></td>
-                <td>Best value GCP tier for agencies</td>
+                <td><strong>$152.02</strong></td>
+                <td>Most popular GCP tier — agency workloads</td>
             </tr>
             <tr>
-                <td><strong>n1-standard-4</strong></td>
+                <td><strong>XL</strong></td>
                 <td>15 GB</td>
                 <td>4</td>
                 <td>20 GB</td>
-                <td><strong>~$148</strong></td>
+                <td><strong>$241.50</strong></td>
                 <td>High-traffic WooCommerce on GCP</td>
             </tr>
         </tbody>
     </table>
     </div>
+
+    <p style="font-size: 0.83rem; color: #6b7280;">GCP pricing on Cloudways is higher than DigitalOcean for equivalent RAM. Choose GCP if you need Google Cloud's specific infrastructure or data center regions. For most WordPress agencies, DigitalOcean delivers better performance-per-dollar.</p>
 
     <h2>Popular tier recommendations</h2>
     <div class="tier-cards">
