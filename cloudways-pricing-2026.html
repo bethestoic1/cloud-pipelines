@@ -96,9 +96,10 @@
 
     <div class="cta-row">
         <a href="https://www.cloudways.com/en/?id=2086075&utm_source=cloudpipelines&utm_medium=organic&utm_campaign=pricing-top"
-           target="_blank" rel="nofollow noopener" class="btn-deploy">Start Cloudways Free Trial →</a>
-        <a href="comparison.html" class="btn-secondary">Compare All Hosts →</a>
+           target="_blank" rel="nofollow noopener" class="btn-deploy">Deploy Free for 3 Days — No Credit Card Required →</a>
+        <a href="comparison.html" class="btn-secondary">See Full 4-Host Comparison →</a>
     </div>
+    <p style="font-size:0.83rem; color:#6b7280; margin:-10px 0 20px;">Test your actual workload on real infrastructure. Cancel before day 3 and you pay nothing.</p>
 
     <div class="callout">
         <strong>Key fact:</strong> Cloudways pricing is per <em>server</em>, not per site. You can host unlimited WordPress installs, PHP apps, or Node.js projects on a single server. This makes Cloudways dramatically cheaper than per-site hosts like Kinsta when you run 3+ sites.
@@ -186,51 +187,51 @@
     <table>
         <thead>
             <tr>
-                <th>Instance</th>
+                <th>Plan</th>
                 <th>RAM</th>
                 <th>vCPU</th>
                 <th>Storage</th>
                 <th>Price/mo</th>
-                <th>Notes</th>
+                <th>Best For</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td><strong>t3.small</strong></td>
+                <td><strong>Micro</strong></td>
+                <td>1 GB</td>
+                <td>2</td>
+                <td>20 GB</td>
+                <td><strong>$20.56</strong></td>
+                <td>Dev/test, low-traffic blogs</td>
+            </tr>
+            <tr>
+                <td><strong>Small</strong></td>
                 <td>2 GB</td>
                 <td>2</td>
                 <td>20 GB</td>
-                <td><strong>~$38</strong></td>
-                <td>Burstable — good for low-traffic sites</td>
+                <td><strong>$38.56</strong></td>
+                <td>Small sites, 3–5 WP installs</td>
             </tr>
             <tr class="highlight-row">
-                <td><strong>t3.medium</strong></td>
+                <td><strong>Medium</strong></td>
                 <td>4 GB</td>
                 <td>2</td>
                 <td>20 GB</td>
-                <td><strong>~$57</strong></td>
-                <td>Most popular AWS tier on Cloudways</td>
+                <td><strong>$91.84</strong></td>
+                <td>Most popular AWS tier — multi-site agencies</td>
             </tr>
             <tr>
-                <td><strong>t3.large</strong></td>
+                <td><strong>Large</strong></td>
                 <td>8 GB</td>
                 <td>2</td>
                 <td>20 GB</td>
-                <td><strong>~$88</strong></td>
-                <td>Multi-site, steady traffic workloads</td>
-            </tr>
-            <tr>
-                <td><strong>c5.large</strong></td>
-                <td>4 GB</td>
-                <td>2</td>
-                <td>20 GB</td>
-                <td><strong>~$120</strong></td>
-                <td>Compute-optimized — high PHP concurrency</td>
+                <td><strong>$183.22</strong></td>
+                <td>High-traffic sites, WooCommerce at scale</td>
             </tr>
         </tbody>
     </table>
     </div>
-    <p style="font-size: 0.83rem; color: #6b7280;">AWS prices include Cloudways management markup. Storage is SSD add-on; base includes EBS volumes. Prices vary slightly by region.</p>
+    <p style="font-size: 0.83rem; color: #6b7280;">AWS plans are significantly more expensive than DigitalOcean at equivalent RAM. Choose AWS only if you have compliance requirements or are deeply integrated with AWS services. For WordPress hosting, DigitalOcean offers far better value.</p>
 
     <h2>Cloudways GCP pricing</h2>
     <p>Google Cloud Platform on Cloudways gives you the same data center infrastructure as Kinsta but with full Cloudways management and multi-app flexibility. Best for teams who want GCP infrastructure without Kinsta's per-site pricing.</p>
@@ -239,42 +240,52 @@
     <table>
         <thead>
             <tr>
-                <th>Instance</th>
+                <th>Plan</th>
                 <th>RAM</th>
                 <th>vCPU</th>
                 <th>Storage</th>
                 <th>Price/mo</th>
-                <th>Notes</th>
+                <th>Best For</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td><strong>n1-standard-1</strong></td>
+                <td><strong>Small</strong></td>
+                <td>1.7 GB</td>
+                <td>Shared</td>
+                <td>20 GB</td>
+                <td><strong>$37.33</strong></td>
+                <td>Entry GCP — small WordPress sites</td>
+            </tr>
+            <tr>
+                <td><strong>Medium</strong></td>
                 <td>3.75 GB</td>
                 <td>1</td>
                 <td>20 GB</td>
-                <td><strong>~$37</strong></td>
-                <td>Entry GCP — good for 3–8 WP sites</td>
+                <td><strong>$84</strong></td>
+                <td>Growing sites, 5–10 WP installs</td>
             </tr>
             <tr class="highlight-row">
-                <td><strong>n1-standard-2</strong></td>
+                <td><strong>Large</strong></td>
                 <td>7.5 GB</td>
                 <td>2</td>
                 <td>20 GB</td>
-                <td><strong>~$74</strong></td>
-                <td>Best value GCP tier for agencies</td>
+                <td><strong>$152.02</strong></td>
+                <td>Most popular GCP tier — agency workloads</td>
             </tr>
             <tr>
-                <td><strong>n1-standard-4</strong></td>
+                <td><strong>XL</strong></td>
                 <td>15 GB</td>
                 <td>4</td>
                 <td>20 GB</td>
-                <td><strong>~$148</strong></td>
+                <td><strong>$241.50</strong></td>
                 <td>High-traffic WooCommerce on GCP</td>
             </tr>
         </tbody>
     </table>
     </div>
+
+    <p style="font-size: 0.83rem; color: #6b7280;">GCP pricing on Cloudways is higher than DigitalOcean for equivalent RAM. Choose GCP if you need Google Cloud's specific infrastructure or data center regions. For most WordPress agencies, DigitalOcean delivers better performance-per-dollar.</p>
 
     <h2>Popular tier recommendations</h2>
     <div class="tier-cards">
@@ -366,6 +377,11 @@
     <div class="verdict-box">
         <h3>Bottom line: Cloudways wins on value at almost every scale</h3>
         <p>The <strong>$24/mo DigitalOcean 2 GB plan</strong> is the sweet spot for most agencies — it hosts 5–15 WordPress sites with room to scale, at a price Kinsta charges for a single site. For a single high-traffic WordPress site where WP-expert support matters more than cost, <a href="kinsta-review-2026.html">Kinsta at $35/mo</a> is competitive. For a first WordPress site on a tight budget, <a href="cloudways-vs-siteground-2026.html">SiteGround's $2.99/mo intro plan</a> is hard to beat for year one.</p>
+        <p style="margin-top:10px; font-size:0.9rem;">If you are currently on Kinsta paying per site, use the pricing table above to calculate your Cloudways equivalent. For most agencies at 5+ sites, the math takes about 30 seconds. The migration is free via Cloudways' WordPress migration plugin.</p>
+    </div>
+
+    <div class="callout" style="background:#fef2f2; border-color:#fecaca;">
+        <strong style="color:#991b1b;">One thing Cloudways pricing never does: surprise you at renewal.</strong> SiteGround's $2.99/mo intro becomes $17.99/mo at year two. Kinsta is $35/mo for one site from day one. Cloudways' $11/mo stays $11/mo. No promotional pricing. No renewal hike. Ever.
     </div>
 
     <h2>What's included in all Cloudways plans</h2>
@@ -385,9 +401,10 @@
 
     <div class="cta-row">
         <a href="https://www.cloudways.com/en/?id=2086075&utm_source=cloudpipelines&utm_medium=organic&utm_campaign=pricing-bottom"
-           target="_blank" rel="nofollow noopener" class="btn-deploy">Start 3-Day Free Trial →</a>
+           target="_blank" rel="nofollow noopener" class="btn-deploy">Claim Your Free Trial — Deploy in Under 90 Seconds →</a>
         <a href="cloudways-vs-kinsta-2026-devops-wp.html" class="btn-secondary">Cloudways vs Kinsta →</a>
     </div>
+    <p style="font-size:0.83rem; color:#6b7280; margin:-10px 0 20px;">No credit card. No commitment. Your price on day 4 is the same as your price in year 3 — Cloudways does not raise rates at renewal.</p>
 
     <div class="faq">
         <h2>FAQ</h2>
